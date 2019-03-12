@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/analogous"
+    android:backgroundTint="@color/analogous"
+    tools:context=".Prelims.HomePageActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/application_logo_trans" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleForum"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/forum"
+        app:layout_constraintEnd_toStartOf="@+id/circleNotes"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forum"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/circleForum"
+        app:layout_constraintStart_toStartOf="@+id/circleForum"
+        app:layout_constraintTop_toBottomOf="@+id/circleForum" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleNotes"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/notes"
+        app:layout_constraintEnd_toStartOf="@+id/circlePublication"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/circleForum"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notes"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/circleNotes"
+        app:layout_constraintStart_toStartOf="@+id/circleNotes"
+        app:layout_constraintTop_toBottomOf="@+id/circleNotes" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circlePublication"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/books"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/circleNotes"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-Publication"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/circlePublication"
+        app:layout_constraintStart_toStartOf="@+id/circlePublication"
+        app:layout_constraintTop_toBottomOf="@+id/circlePublication" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleEvents"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/event"
+        app:layout_constraintEnd_toStartOf="@+id/circleQnA"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Events"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/circleEvents"
+        app:layout_constraintStart_toStartOf="@+id/circleEvents"
+        app:layout_constraintTop_toBottomOf="@+id/circleEvents" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleQnA"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/q_a"
+        app:layout_constraintEnd_toStartOf="@+id/circleGames"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/circleEvents"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="139dp"
+        android:layout_height="wrap_content"
+        android:text="Question and Answer"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/circleQnA"
+        app:layout_constraintStart_toStartOf="@+id/circleQnA"
+        app:layout_constraintTop_toBottomOf="@+id/circleQnA" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleGames"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/games"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/circleQnA"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Games"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/circleGames"
+        app:layout_constraintStart_toStartOf="@+id/circleGames"
+        app:layout_constraintTop_toBottomOf="@+id/circleGames" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleLogout"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/icons8_sign_out_64"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Out "
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/circleLogout"
+        app:layout_constraintStart_toStartOf="@+id/circleLogout"
+        app:layout_constraintTop_toBottomOf="@+id/circleLogout" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.avery.chamberofwizards">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.REQUEST_PACKAGE_INSTALLS" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <application
+        android:name=".ChamberOfWizards3"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Prelims.VerifyEmailActivity"
+            android:parentActivityName=".Forum.login_activity"></activity>
+        <activity android:name=".Prelims.HomePageActivity" />
+        <activity android:name=".Forum.ForumLikersActivity" />
+        <activity android:name=".Forum.EditPostActivity" />
+        <activity android:name=".Games.MainGamesActivity" />
+
+        <service
+            android:name=".Books.Services.DownloadBookService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".Forum.MainActivity" />
+        <activity android:name=".Forum.register_activity" />
+        <activity android:name=".Forum.login_activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Forum.setup_activity" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".Forum.PostActivity"
+            android:parentActivityName=".Forum.MainActivity" />
+        <activity android:name=".Forum.ClickPostActivity" />
+        <activity
+            android:name=".Forum.SettingsActivity"
+            android:parentActivityName=".Forum.MainActivity" />
+        <activity
+            android:name=".Forum.ProfileActivity"
+            android:parentActivityName=".Forum.MainActivity" />
+        <activity
+            android:name=".Forum.FindFriendsActivity"
+            android:parentActivityName=".Forum.MainActivity" />
+        <activity
+            android:name=".Forum.CommentsActivity"
+            android:parentActivityName=".Forum.MainActivity2" />
+        <activity
+            android:name=".Forum.ResetPasswordActivity"
+            android:parentActivityName=".Forum.login_activity" />
+        <activity android:name=".Forum.PersonProfileActivity" />
+        <activity
+            android:name=".Forum.ChatActivity"
+            android:parentActivityName=".Forum.MainActivity" />
+        <activity android:name=".Forum.MetroHome" />
+        <activity
+            android:name=".Forum.VerifiyStudentNumberActivity"
+            android:parentActivityName=".Forum.register_activity" />
+        <activity android:name=".Forum.MainActivity2" />
+        <activity android:name=".Forum.ClickNotificationActivity" />
+        <activity android:name=".Notes.MainNotesActivity" />
+        <activity
+            android:name=".Notes.NewNoteActivity"
+            android:parentActivityName=".Notes.MainNotesActivity" />
+        <activity android:name=".Books.MainBooksActivity" />
+        <activity
+            android:name=".Books.SubmitActivity"
+            android:parentActivityName=".Books.MainBooksActivity" />
+        <activity
+            android:name=".Books.ClickBookActivity"
+            android:parentActivityName=".Books.MainBooksActivity" />
+        <activity
+            android:name=".Books.ReadBookActivity"
+            android:parentActivityName=".Books.ClickBookActivity" />
+        <activity android:name=".Books.WriteReviewActivity" />
+        <activity
+            android:name=".Main3Activity"
+            android:label="@string/title_activity_main3"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Books.TopRatedMoreActivity"
+            android:parentActivityName=".Books.MainBooksActivity" />
+        <activity android:name=".Books.MostDiscussedMoreActivity" />
+        <activity
+            android:name=".Books.SearchBookActivity"
+            android:parentActivityName=".Books.MainBooksActivity" />
+        <activity android:name=".Events.EventsMainActivity" />
+        <activity
+            android:name=".Events.PostAnnouncementActivity"
+            android:parentActivityName=".Events.EventsMainActivity" />
+        <activity android:name=".Events.EventsCalendarActivity" />
+        <activity android:name=".Questions.QuestionsActivity" />
+        <activity
+            android:name=".Questions.ClickQuestionActivity"
+            android:parentActivityName=".Questions.QuestionsActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".Questions.AnswerCommentRepliesActivity" />
+
+        <provider
+            android:name=".Games.MyFileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">823456371752-6tlngnh63qsqfrpbiu17ctq8cinltmh8.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://chamber-of-wizards.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">823456371752</string>
+    <string name="google_api_key" translatable="false">AIzaSyCWur0ytFsTo6RE795kNBOd6dbrSi1kvi0</string>
+    <string name="google_app_id" translatable="false">1:823456371752:android:ee5b0e5e6e220fe5</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCWur0ytFsTo6RE795kNBOd6dbrSi1kvi0</string>
+    <string name="google_storage_bucket" translatable="false">chamber-of-wizards.appspot.com</string>
+    <string name="project_id" translatable="false">chamber-of-wizards</string>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/announcementsMenu"
+        android:icon="@drawable/announcements_icon"
+        android:title="Announcements" />
+
+    <item
+        android:id="@+id/calendarMenu"
+        android:icon="@drawable/calendar_icon"
+        android:title="Calendar" />
+
+</menu>

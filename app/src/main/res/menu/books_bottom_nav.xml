@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/books_read_nav"
+        android:title="Read"
+        android:icon="@drawable/ic_book_black_24dp"/>
+
+    <item
+        android:id="@+id/books_favorites_nav"
+        android:icon="@drawable/favorite_book_icon"
+        android:title="Favorites" />
+
+    <item
+        android:id="@+id/books_fav_nav"
+        android:icon="@drawable/ic_file_download_black_24dp"
+        android:title="Downloads" />
+
+
+</menu>

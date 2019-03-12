@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:id="http://schemas.android.com/tools">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_forum"
+            android:icon="@drawable/forum_icon"
+            android:title="Forum" />
+
+        <item
+            android:id="@+id/nav_notes"
+            android:icon="@drawable/note_icon"
+            android:title="Notes" />
+
+        <item
+            android:id="@+id/nav_books"
+            android:icon="@drawable/note_icon"
+            android:title="Publication" />
+
+        <item
+            android:id="@+id/nav_events"
+            android:icon="@drawable/event_icon"
+            android:title="Events" />
+
+        <item
+            android:id="@+id/nav_questions"
+            android:icon="@drawable/answer"
+            android:title="Question and Answer" />
+
+        <item
+            android:id="@+id/nav_g"
+            android:icon="@drawable/games_icon"
+            android:title="Games"/>
+
+    </group>
+
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/logout_icon"
+        android:title="Logout">
+
+    </item>
+
+
+</menu>

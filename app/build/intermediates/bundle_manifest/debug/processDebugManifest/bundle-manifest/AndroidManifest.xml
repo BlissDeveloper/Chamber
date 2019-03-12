@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.avery.chamberofwizards"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="26" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.REQUEST_PACKAGE_INSTALLS" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:name="com.example.avery.chamberofwizards.ChamberOfWizards3"
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.avery.chamberofwizards.Prelims.VerifyEmailActivity"
+            android:parentActivityName="com.example.avery.chamberofwizards.Forum.login_activity" />
+        <activity android:name="com.example.avery.chamberofwizards.Prelims.HomePageActivity" />
+        <activity android:name="com.example.avery.chamberofwizards.Forum.ForumLikersActivity" />
+        <activity android:name="com.example.avery.chamberofwizards.Forum.EditPostActivity" />
+        <activity android:name="com.example.avery.chamberofwizards.Games.MainGamesActivity" />
+
+        <service
+            android:name="com.example.avery.chamberofwizards.Books.Services.DownloadBookService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name="com.example.avery.chamberofwizards.Forum.MainActivity" />
+        <activity android:name="com.example.avery.chamberofwizards.Forum.register_activity" />
+        <activity android:name="com.example.avery.chamberofwizards.Forum.login_activity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.avery.chamberofwizards.Forum.setup_activity" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name="com.example.avery.chamberofwizards.Forum.PostActivity"
+            android:parentActivityName="com.example.avery.chamberofwizards.Forum.MainActivity" />
+        <activity android:name="com.example.avery.chamberofwizards.Forum.ClickPostActivity" />
+        <activity
+            android:name="com.example.avery.chamberofwizards.Forum.SettingsActivity"
+            android:parentActivityName="com.example.avery.chamberofwizards.Forum.MainActivity" />
+        <activity
+            android:name="com.example.avery.chamberofwizards.Forum.ProfileActivity"
+            android:parentActivityName="com.example.avery.chamberofwizards.Forum.MainActivity" />
+        <activity
+            android:name="com.example.avery.chamberofwizards.Forum.FindFriendsActivity"
+            android:parentActivityName="com.example.avery.chamberofwizards.Forum.MainActivity" />
+        <activity
+            android:name="com.example.avery.chamberofwizards.Forum.CommentsActivity"
+            android:parentActivityName="com.example.avery.chamberofwizards.Forum.MainActivity2" />
+        <activity
+            android:name="com.example.avery.chamberofwizards.Forum.ResetPasswordActivity"
+            android:parentActivityName="com.example.avery.chamberofwizards.Forum.login_activity" />
+        <activity android:name="com.example.avery.chamberofwizards.Forum.PersonProfileActivity" />
+        <activity
+            android:name="com.example.avery.chamberofwizards.Forum.ChatActivity"
+            android:parentActivityName="com.example.avery.chamberofwizards.Forum.MainActivity" />
+        <activity android:name="com.example.avery.chamberofwizards.Forum.MetroHome" />
+        <activity
+            android:name="com.example.avery.chamberofwizards.Forum.VerifiyStudentNumberActivity"
+            android:parentActivityName="com.example.avery.chamberofwizards.Forum.register_activity" />
+        <activity android:name="com.example.avery.chamberofwizards.Forum.MainActivity2" />
+        <activity android:name="com.example.avery.chamberofwizards.Forum.ClickNotificationActivity" />
+        <activity android:name="com.example.avery.chamberofwizards.Notes.MainNotesActivity" />
+        <activity
+            android:name="com.example.avery.chamberofwizards.Notes.NewNoteActivity"
+            android:parentActivityName="com.example.avery.chamberofwizards.Notes.MainNotesActivity" />
+        <activity android:name="com.example.avery.chamberofwizards.Books.MainBooksActivity" />
+        <activity
+            android:name="com.example.avery.chamberofwizards.Books.SubmitActivity"
+            android:parentActivityName="com.example.avery.chamberofwizards.Books.MainBooksActivity" />
+        <activity
+            android:name="com.example.avery.chamberofwizards.Books.ClickBookActivity"
+            android:parentActivityName="com.example.avery.chamberofwizards.Books.MainBooksActivity" />
+        <activity
+            android:name="com.example.avery.chamberofwizards.Books.ReadBookActivity"
+            android:parentActivityName="com.example.avery.chamberofwizards.Books.ClickBookActivity" />
+        <activity android:name="com.example.avery.chamberofwizards.Books.WriteReviewActivity" />
+        <activity
+            android:name="com.example.avery.chamberofwizards.Main3Activity"
+            android:label="@string/title_activity_main3"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.example.avery.chamberofwizards.Books.TopRatedMoreActivity"
+            android:parentActivityName="com.example.avery.chamberofwizards.Books.MainBooksActivity" />
+        <activity android:name="com.example.avery.chamberofwizards.Books.MostDiscussedMoreActivity" />
+        <activity
+            android:name="com.example.avery.chamberofwizards.Books.SearchBookActivity"
+            android:parentActivityName="com.example.avery.chamberofwizards.Books.MainBooksActivity" />
+        <activity android:name="com.example.avery.chamberofwizards.Events.EventsMainActivity" />
+        <activity
+            android:name="com.example.avery.chamberofwizards.Events.PostAnnouncementActivity"
+            android:parentActivityName="com.example.avery.chamberofwizards.Events.EventsMainActivity" />
+        <activity android:name="com.example.avery.chamberofwizards.Events.EventsCalendarActivity" />
+        <activity android:name="com.example.avery.chamberofwizards.Questions.QuestionsActivity" />
+        <activity
+            android:name="com.example.avery.chamberofwizards.Questions.ClickQuestionActivity"
+            android:parentActivityName="com.example.avery.chamberofwizards.Questions.QuestionsActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name="com.example.avery.chamberofwizards.Questions.AnswerCommentRepliesActivity" />
+
+        <provider
+            android:name="com.example.avery.chamberofwizards.Games.MyFileProvider"
+            android:authorities="com.example.avery.chamberofwizards.provider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:exported="false" >
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <activity
+            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false" >
+        </receiver>
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.INSTALL_PACKAGES" >
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+        <!--
+             FirebaseInstanceIdService performs security checks at runtime,
+             no need for explicit permissions despite exported="true"
+        -->
+        <service
+            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+            android:exported="true" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="com.example.avery.chamberofwizards.firebaseinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:authorities="com.example.avery.chamberofwizards.com.squareup.picasso"
+            android:exported="false" />
+    </application>
+
+</manifest>

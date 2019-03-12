@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "823456371752",
+    "firebase_url": "https://chamber-of-wizards.firebaseio.com",
+    "project_id": "chamber-of-wizards",
+    "storage_bucket": "chamber-of-wizards.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:823456371752:android:ee5b0e5e6e220fe5",
+        "android_client_info": {
+          "package_name": "com.example.avery.chamberofwizards"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "823456371752-6tlngnh63qsqfrpbiu17ctq8cinltmh8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWur0ytFsTo6RE795kNBOd6dbrSi1kvi0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+    <color name="colorPrimary">#4caf50</color>
+    -->
+    <color name="colorPrimary">#4CAF50</color>
+    <color name="colorPrimaryDark">#357a38</color>
+    <color name="colorAccent">#6fbf73</color>
+    <color name="flat_black">#2c3e50</color>
+    <color name="metro_black">#1d1d1d</color>
+    <color name="colorMain">#d7d7d7</color>
+    <color name="materialRed">#b71c1c</color>
+
+    <color name="senderColor"> #A0179E </color>
+    <color name="materialPurple">#6200EE  </color>
+    <color name="materialPink">#F50057</color>
+    <color name="materialBlue">#90caf9</color>
+    <color name="materialYellow"> #FFEB3B </color>
+    <color name="materialBlueGray">#263238</color>
+    <color name="materialBlueGrayLight">#eceff1</color>
+    <color name="materialBlueGray2">#cfd8dc</color>
+    <color name="complementary">#af4cac</color>
+    <color name="analogous">#4caf81</color>
+    <color name="secondary">#d91d5f</color>
+    <color name="triadBlue">#4F4CAF</color>
+
+    <color name="logo_bg">#42D866</color>
+
+    // E9EBEE
+</resources>
