@@ -37,6 +37,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.firestore.CollectionReference;
+import com.google.firebase.firestore.FirebaseFirestore;
 import com.squareup.picasso.Picasso;
 
 import org.w3c.dom.Comment;
@@ -60,6 +62,7 @@ public class CommentsActivity extends AppCompatActivity {
     private DatabaseReference rootRef;
     private DatabaseReference likesRef;
     private DatabaseReference commentsRef;
+    private DatabaseReference forumNotifsRef;
 
     private EditText commentInputText;
     private RecyclerView commentsList;
@@ -120,6 +123,7 @@ public class CommentsActivity extends AppCompatActivity {
         rootRef = FirebaseDatabase.getInstance().getReference();
         likesRef = FirebaseDatabase.getInstance().getReference().child("Likes");
         commentsRef = allPostsRef.child(post_key).child("Comments");
+        forumNotifsRef = FirebaseDatabase.getInstance().getReference().child("Notifications_Forum");
 
         commentInputText = findViewById(R.id.commentInput);
         postCommentButton = (ImageButton) findViewById(R.id.postCommentButton);
@@ -267,19 +271,17 @@ public class CommentsActivity extends AppCompatActivity {
         commentsRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                if(dataSnapshot.exists()) {
+                if (dataSnapshot.exists()) {
                     int number_of_comments = 0;
                     number_of_comments = (int) dataSnapshot.getChildrenCount();
 
-                    if(number_of_comments > 0) {
-                        if(number_of_comments == 1) {
+                    if (number_of_comments > 0) {
+                        if (number_of_comments == 1) {
                             btnCommentPost.setText(String.valueOf(number_of_comments) + " comment");
-                        }
-                        else{
+                        } else {
                             btnCommentPost.setText(String.valueOf(number_of_comments) + " comments");
                         }
-                    }
-                    else {
+                    } else {
                         btnCommentPost.setText("No comments yet");
                     }
                 }
@@ -296,41 +298,36 @@ public class CommentsActivity extends AppCompatActivity {
         likesRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                if(dataSnapshot.exists()) {
-                    if(dataSnapshot.child(post_key).hasChild(currentUserID)) {
+                if (dataSnapshot.exists()) {
+                    if (dataSnapshot.child(post_key).hasChild(currentUserID)) {
                         int number_of_likes = 0;
                         number_of_likes = (int) dataSnapshot.child(post_key).getChildrenCount();
-                        btnLikePost.setCompoundDrawablesWithIntrinsicBounds(R.drawable.heart_filled,0,0,0);
+                        btnLikePost.setCompoundDrawablesWithIntrinsicBounds(R.drawable.heart_filled, 0, 0, 0);
 
-                        if(number_of_likes > 0) {
-                            if(number_of_likes == 1) {
+                        if (number_of_likes > 0) {
+                            if (number_of_likes == 1) {
                                 btnLikePost.setText(String.valueOf(number_of_likes) + " like");
-                            }
-                            else {
+                            } else {
                                 btnLikePost.setText(String.valueOf(number_of_likes) + " likes");
                             }
-                        }
-                        else {
+                        } else {
                             btnLikePost.setText("No likes yet");
                         }
-                    }
-                    else {
+                    } else {
                         int number_of_likes = 0;
                         number_of_likes = (int) dataSnapshot.child(post_key).getChildrenCount();
 
-                        if(number_of_likes > 0) {
-                            if(number_of_likes == 1) {
+                        if (number_of_likes > 0) {
+                            if (number_of_likes == 1) {
                                 btnLikePost.setText(String.valueOf(number_of_likes) + " like");
-                            }
-                            else {
+                            } else {
                                 btnLikePost.setText(String.valueOf(number_of_likes) + " likes");
                             }
-                        }
-                        else {
+                        } else {
                             btnLikePost.setText("No likes yet");
                         }
 
-                        btnLikePost.setCompoundDrawablesWithIntrinsicBounds(R.drawable.heart_heart,0,0,0);
+                        btnLikePost.setCompoundDrawablesWithIntrinsicBounds(R.drawable.heart_heart, 0, 0, 0);
                     }
                 }
             }
@@ -346,12 +343,11 @@ public class CommentsActivity extends AppCompatActivity {
         likesRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                if(dataSnapshot.exists()) {
-                    if(dataSnapshot.child(post_key).hasChild(currentUserID)) {
+                if (dataSnapshot.exists()) {
+                    if (dataSnapshot.child(post_key).hasChild(currentUserID)) {
                         //May like na, so ire-remove:
                         likesRef.child(post_key).child(currentUserID).removeValue();
-                    }
-                    else {
+                    } else {
                         likesRef.child(post_key).child(currentUserID).setValue(true);
                     }
                 }
@@ -525,30 +521,23 @@ public class CommentsActivity extends AppCompatActivity {
                 if (dataSnapshot.exists()) {
                     posterUsername = dataSnapshot.child(pKey).child("uid").getValue().toString();
 
-                    if (posterUsername != null) {
-                        HashMap<String, Object> notificationMap = new HashMap<>();
-                        notificationMap.put("poster", posterUsername);
-                        notificationMap.put("commenter", uName);
-                        notificationMap.put("date", date);
-                        notificationMap.put("time", time);
-                        notificationMap.put("commenter_image", commenterImg);
-                        notificationMap.put("post_key", pKey);
+                    Map<String, Object> map = new ArrayMap<>();
+                    map.put("from", currentUserID);
 
-                        rootRef.child("Notifications").child(pKey + time + date + "notif").updateChildren(notificationMap).addOnCompleteListener(new OnCompleteListener<Void>() {
-                            @Override
-                            public void onComplete(@NonNull Task<Void> task) {
-                                if (task.isSuccessful()) {
-                                    saveLatestCommentTransaction(pKey);
-                                } else {
-                                    Toast.makeText(CommentsActivity.this, task.getException().getMessage(), Toast.LENGTH_SHORT).show();
-                                }
+                    forumNotifsRef.push().child(posterUsername).updateChildren(map).addOnCompleteListener(new OnCompleteListener<Void>() {
+                        @Override
+                        public void onComplete(@NonNull Task<Void> task) {
+                            if (task.isSuccessful()) {
+                                saveLatestCommentTransaction(pKey);
+                            } else {
+                                Toast.makeText(CommentsActivity.this, task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                             }
-                        });
-
-
-                    }
+                        }
+                    });
                 }
             }
+
+            //saveLatestCommentTransaction(pKey);
 
             @Override
             public void onCancelled(DatabaseError databaseError) {

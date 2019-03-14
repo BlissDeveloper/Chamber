@@ -13,11 +13,11 @@
                         "endOffsets": "205,309,423,509,609,725,805,884,968,1077,1184,1285,1393,1498,1605,1766,1865,1949"
                     },
                     "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,37",
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,38",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,210,314,428,514,614,730,810,889,973,1082,1189,1290,1398,1503,1610,1771,4600",
+                        "startOffsets": "105,210,314,428,514,614,730,810,889,973,1082,1189,1290,1398,1503,1610,1771,4706",
                         "endColumns": "104,103,113,85,99,115,79,78,83,108,106,100,107,104,106,160,98,83",
-                        "endOffsets": "205,309,423,509,609,725,805,884,968,1077,1184,1285,1393,1498,1605,1766,1865,4679"
+                        "endOffsets": "205,309,423,509,609,725,805,884,968,1077,1184,1285,1393,1498,1605,1766,1865,4785"
                     }
                 },
                 {
@@ -35,6 +35,23 @@
                         "startOffsets": "3025",
                         "endColumns": "208",
                         "endOffsets": "3229"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-1\\files-1.1\\firebase-messaging-17.4.0.aar\\5fdad9deeff1b4761fbd8b86e45d48d3\\res\\values-uz\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "205",
+                        "endColumns": "101",
+                        "endOffsets": "306"
+                    },
+                    "to": {
+                        "startLines": "37",
+                        "startColumns": "4",
+                        "startOffsets": "4600",
+                        "endColumns": "105",
+                        "endOffsets": "4701"
                     }
                 },
                 {
@@ -64,11 +81,11 @@
                         "endOffsets": "151"
                     },
                     "to": {
-                        "startLines": "38",
+                        "startLines": "39",
                         "startColumns": "4",
-                        "startOffsets": "4684",
+                        "startOffsets": "4790",
                         "endColumns": "100",
-                        "endOffsets": "4780"
+                        "endOffsets": "4886"
                     }
                 }
             ]

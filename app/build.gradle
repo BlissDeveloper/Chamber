@@ -50,6 +50,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-firestore:17.1.2'
     implementation 'com.google.firebase:firebase-storage:16.0.4'
     implementation 'com.google.firebase:firebase-auth:16.0.5'
+    implementation 'com.google.firebase:firebase-messaging:17.4.0'
 
     //Para sa pagslide ng views
     implementation "com.github.mancj:SlideUp-Android:2.2.8"
