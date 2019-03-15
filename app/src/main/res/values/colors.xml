@@ -6,16 +6,18 @@
     <color name="colorPrimary">#4CAF50</color>
     <color name="colorPrimaryDark">#357a38</color>
     <color name="colorAccent">#6fbf73</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorTransparentWhite">#80ffffff</color>
     <color name="flat_black">#2c3e50</color>
     <color name="metro_black">#1d1d1d</color>
     <color name="colorMain">#d7d7d7</color>
     <color name="materialRed">#b71c1c</color>
 
-    <color name="senderColor"> #A0179E </color>
-    <color name="materialPurple">#6200EE  </color>
+    <color name="senderColor">#A0179E</color>
+    <color name="materialPurple">#6200EE</color>
     <color name="materialPink">#F50057</color>
     <color name="materialBlue">#90caf9</color>
-    <color name="materialYellow"> #FFEB3B </color>
+    <color name="materialYellow">#FFEB3B</color>
     <color name="materialBlueGray">#263238</color>
     <color name="materialBlueGrayLight">#eceff1</color>
     <color name="materialBlueGray2">#cfd8dc</color>

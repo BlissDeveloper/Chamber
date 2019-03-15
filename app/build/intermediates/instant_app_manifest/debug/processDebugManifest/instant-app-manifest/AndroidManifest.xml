@@ -70,7 +70,13 @@
             android:parentActivityName="com.example.avery.chamberofwizards.Forum.MainActivity" />
         <activity
             android:name="com.example.avery.chamberofwizards.Forum.CommentsActivity"
-            android:parentActivityName="com.example.avery.chamberofwizards.Forum.MainActivity2" />
+            android:parentActivityName="com.example.avery.chamberofwizards.Forum.MainActivity2" >
+            <intent-filter>
+                <action android:name="comment_activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity
             android:name="com.example.avery.chamberofwizards.Forum.ResetPasswordActivity"
             android:parentActivityName="com.example.avery.chamberofwizards.Forum.login_activity" />
@@ -135,6 +141,16 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/provider_paths" />
         </provider>
+
+        <service android:name="com.example.avery.chamberofwizards.Prelims.FirebaseMessagingService" >
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/chamber_channel" />
 
         <service
             android:name="com.google.firebase.components.ComponentDiscoveryService"

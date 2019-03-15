@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Mar 11 20:08:18 SGT 2019
+#Fri Mar 15 22:09:58 SGT 2019
 17.baseType=DIRECTORY
 4.path=classes.dex
 25.base=C\:\\Users\\ASUS\\Documents\\Thesis Docs\\Chamber-20180909T075639Z-001\\Chamber\\ChamberOfWizards3\\app\\build\\intermediates\\transforms\\mergeJniLibs\\debug\\0

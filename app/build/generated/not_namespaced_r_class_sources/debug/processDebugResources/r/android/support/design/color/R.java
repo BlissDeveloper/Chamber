@@ -45,8 +45,8 @@ public final class R {
     public static final class color {
         private color() {}
 
-        public static final int design_default_color_primary = 0x7f06003c;
-        public static final int design_default_color_primary_dark = 0x7f06003d;
-        public static final int mtrl_scrim_color = 0x7f060079;
+        public static final int design_default_color_primary = 0x7f06003e;
+        public static final int design_default_color_primary_dark = 0x7f06003f;
+        public static final int mtrl_scrim_color = 0x7f06007b;
     }
 }

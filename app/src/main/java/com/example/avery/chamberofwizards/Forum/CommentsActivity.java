@@ -63,6 +63,7 @@ public class CommentsActivity extends AppCompatActivity {
     private DatabaseReference likesRef;
     private DatabaseReference commentsRef;
     private DatabaseReference forumNotifsRef;
+    private DatabaseReference likesNotifsRef;
 
     private EditText commentInputText;
     private RecyclerView commentsList;
@@ -86,10 +87,14 @@ public class CommentsActivity extends AppCompatActivity {
     private Button btnCommentPost;
     private ImageButton imageButtonForumCommentDots;
 
+    private boolean isTouched;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_comments);
+
+        isTouched = false;
 
         /*
         private CircleImageView circleImageViewPosterImage;
@@ -124,6 +129,7 @@ public class CommentsActivity extends AppCompatActivity {
         likesRef = FirebaseDatabase.getInstance().getReference().child("Likes");
         commentsRef = allPostsRef.child(post_key).child("Comments");
         forumNotifsRef = FirebaseDatabase.getInstance().getReference().child("Notifications_Forum");
+        likesNotifsRef = FirebaseDatabase.getInstance().getReference().child("Notifications_Likes");
 
         commentInputText = findViewById(R.id.commentInput);
         postCommentButton = (ImageButton) findViewById(R.id.postCommentButton);
@@ -339,17 +345,64 @@ public class CommentsActivity extends AppCompatActivity {
         });
     }
 
-    public void likePost() {
-        likesRef.addValueEventListener(new ValueEventListener() {
+    public void addLikeNotification() {
+        allPostsRef.child(post_key).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 if (dataSnapshot.exists()) {
+                    String uid = dataSnapshot.child("uid").getValue().toString();
+
+                    if (uid != null) {
+                        Map<String, Object> map = new ArrayMap<>();
+                        map.put("from", currentUserID);
+                        map.put("post_key", post_key);
+
+                        likesNotifsRef.push().child(uid).updateChildren(map).addOnCompleteListener(new OnCompleteListener<Void>() {
+                            @Override
+                            public void onComplete(@NonNull Task<Void> task) {
+                                if (task.isSuccessful()) {
+                                    Log.d("Avery", "Like notidication added!");
+                                } else {
+                                    Log.e("Avery", task.getException().getMessage());
+                                }
+                            }
+                        });
+                    }
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+    }
+
+    public void likePost() {
+        isTouched = true;
+
+        likesRef.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                if (isTouched) {
                     if (dataSnapshot.child(post_key).hasChild(currentUserID)) {
                         //May like na, so ire-remove:
-                        likesRef.child(post_key).child(currentUserID).removeValue();
+                        likesRef.child(post_key).child(currentUserID).removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {
+                            @Override
+                            public void onComplete(@NonNull Task<Void> task) {
+                                isTouched = false;
+                            }
+                        });
                     } else {
-                        likesRef.child(post_key).child(currentUserID).setValue(true);
+                        likesRef.child(post_key).child(currentUserID).setValue(true).addOnCompleteListener(new OnCompleteListener<Void>() {
+                            @Override
+                            public void onComplete(@NonNull Task<Void> task) {
+                                addLikeNotification();
+                                isTouched = false;
+                            }
+                        });
                     }
+
                 }
             }
 
@@ -523,6 +576,7 @@ public class CommentsActivity extends AppCompatActivity {
 
                     Map<String, Object> map = new ArrayMap<>();
                     map.put("from", currentUserID);
+                    map.put("post_key", post_key);
 
                     forumNotifsRef.push().child(posterUsername).updateChildren(map).addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override

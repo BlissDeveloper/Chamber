@@ -20,24 +20,24 @@
         "source": "C:\\Users\\ASUS\\Documents\\Thesis Docs\\Chamber-20180909T075639Z-001\\Chamber\\ChamberOfWizards3\\app\\src\\main\\res\\drawable-xhdpi\\forum_icon.png"
     },
     {
-        "merged": "C:\\Users\\ASUS\\Documents\\Thesis Docs\\Chamber-20180909T075639Z-001\\Chamber\\ChamberOfWizards3\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
-        "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-16.0.1.aar\\c3fccd96b36e8eefe9cb4a6c39901c2b\\res\\drawable-xhdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
-    },
-    {
         "merged": "C:\\Users\\ASUS\\Documents\\Thesis Docs\\Chamber-20180909T075639Z-001\\Chamber\\ChamberOfWizards3\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_search_books_icon.png.flat",
         "source": "C:\\Users\\ASUS\\Documents\\Thesis Docs\\Chamber-20180909T075639Z-001\\Chamber\\ChamberOfWizards3\\app\\src\\main\\res\\drawable-mdpi\\search_books_icon.png"
     },
     {
-        "merged": "C:\\Users\\ASUS\\Documents\\Thesis Docs\\Chamber-20180909T075639Z-001\\Chamber\\ChamberOfWizards3\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_chip_close_icon_tint.xml.flat",
-        "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-1\\files-1.1\\design-chip-28.0.0-alpha1.aar\\ae5a6c515237c7a3a48e72578bfcc810\\res\\color\\mtrl_chip_close_icon_tint.xml"
+        "merged": "C:\\Users\\ASUS\\Documents\\Thesis Docs\\Chamber-20180909T075639Z-001\\Chamber\\ChamberOfWizards3\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
+        "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-16.0.1.aar\\c3fccd96b36e8eefe9cb4a6c39901c2b\\res\\drawable-xhdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
+    },
+    {
+        "merged": "C:\\Users\\ASUS\\Documents\\Thesis Docs\\Chamber-20180909T075639Z-001\\Chamber\\ChamberOfWizards3\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_favorite_icon_outline.xml.flat",
+        "source": "C:\\Users\\ASUS\\Documents\\Thesis Docs\\Chamber-20180909T075639Z-001\\Chamber\\ChamberOfWizards3\\app\\src\\main\\res\\drawable-anydpi\\favorite_icon_outline.xml"
     },
     {
         "merged": "C:\\Users\\ASUS\\Documents\\Thesis Docs\\Chamber-20180909T075639Z-001\\Chamber\\ChamberOfWizards3\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_rookie_4.png.flat",
         "source": "C:\\Users\\ASUS\\Documents\\Thesis Docs\\Chamber-20180909T075639Z-001\\Chamber\\ChamberOfWizards3\\app\\src\\main\\res\\drawable-xhdpi\\rookie_4.png"
     },
     {
-        "merged": "C:\\Users\\ASUS\\Documents\\Thesis Docs\\Chamber-20180909T075639Z-001\\Chamber\\ChamberOfWizards3\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi_favorite_icon_outline.xml.flat",
-        "source": "C:\\Users\\ASUS\\Documents\\Thesis Docs\\Chamber-20180909T075639Z-001\\Chamber\\ChamberOfWizards3\\app\\src\\main\\res\\drawable-anydpi\\favorite_icon_outline.xml"
+        "merged": "C:\\Users\\ASUS\\Documents\\Thesis Docs\\Chamber-20180909T075639Z-001\\Chamber\\ChamberOfWizards3\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_chip_close_icon_tint.xml.flat",
+        "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-1\\files-1.1\\design-chip-28.0.0-alpha1.aar\\ae5a6c515237c7a3a48e72578bfcc810\\res\\color\\mtrl_chip_close_icon_tint.xml"
     },
     {
         "merged": "C:\\Users\\ASUS\\Documents\\Thesis Docs\\Chamber-20180909T075639Z-001\\Chamber\\ChamberOfWizards3\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -60,20 +60,20 @@
         "source": "C:\\Users\\ASUS\\Documents\\Thesis Docs\\Chamber-20180909T075639Z-001\\Chamber\\ChamberOfWizards3\\app\\src\\main\\res\\drawable-xhdpi\\location_icon_green.png"
     },
     {
-        "merged": "C:\\Users\\ASUS\\Documents\\Thesis Docs\\Chamber-20180909T075639Z-001\\Chamber\\ChamberOfWizards3\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_black_36dp.png.flat",
-        "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-alpha1.aar\\c89a56eff342ed34b5088b080e3ec77d\\res\\drawable-xxhdpi-v4\\abc_ic_star_black_36dp.png"
-    },
-    {
         "merged": "C:\\Users\\ASUS\\Documents\\Thesis Docs\\Chamber-20180909T075639Z-001\\Chamber\\ChamberOfWizards3\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_write_comment.png.flat",
         "source": "C:\\Users\\ASUS\\Documents\\Thesis Docs\\Chamber-20180909T075639Z-001\\Chamber\\ChamberOfWizards3\\app\\src\\main\\res\\drawable-xxhdpi\\write_comment.png"
     },
     {
-        "merged": "C:\\Users\\ASUS\\Documents\\Thesis Docs\\Chamber-20180909T075639Z-001\\Chamber\\ChamberOfWizards3\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_expert_1.png.flat",
-        "source": "C:\\Users\\ASUS\\Documents\\Thesis Docs\\Chamber-20180909T075639Z-001\\Chamber\\ChamberOfWizards3\\app\\src\\main\\res\\drawable-xxxhdpi\\expert_1.png"
+        "merged": "C:\\Users\\ASUS\\Documents\\Thesis Docs\\Chamber-20180909T075639Z-001\\Chamber\\ChamberOfWizards3\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_black_36dp.png.flat",
+        "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-alpha1.aar\\c89a56eff342ed34b5088b080e3ec77d\\res\\drawable-xxhdpi-v4\\abc_ic_star_black_36dp.png"
     },
     {
         "merged": "C:\\Users\\ASUS\\Documents\\Thesis Docs\\Chamber-20180909T075639Z-001\\Chamber\\ChamberOfWizards3\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat",
         "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-alpha1.aar\\c89a56eff342ed34b5088b080e3ec77d\\res\\drawable-xhdpi-v4\\abc_text_select_handle_middle_mtrl_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\ASUS\\Documents\\Thesis Docs\\Chamber-20180909T075639Z-001\\Chamber\\ChamberOfWizards3\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_expert_1.png.flat",
+        "source": "C:\\Users\\ASUS\\Documents\\Thesis Docs\\Chamber-20180909T075639Z-001\\Chamber\\ChamberOfWizards3\\app\\src\\main\\res\\drawable-xxxhdpi\\expert_1.png"
     },
     {
         "merged": "C:\\Users\\ASUS\\Documents\\Thesis Docs\\Chamber-20180909T075639Z-001\\Chamber\\ChamberOfWizards3\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
@@ -84,12 +84,12 @@
         "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-1\\files-1.1\\library-3.4.0.aar\\9d2f2323ca5355de38d97ff7208b4089\\res\\drawable\\above_shadow.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\Documents\\Thesis Docs\\Chamber-20180909T075639Z-001\\Chamber\\ChamberOfWizards3\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
-        "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-alpha1.aar\\c89a56eff342ed34b5088b080e3ec77d\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_36dp.png"
-    },
-    {
         "merged": "C:\\Users\\ASUS\\Documents\\Thesis Docs\\Chamber-20180909T075639Z-001\\Chamber\\ChamberOfWizards3\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_edit_post.xml.flat",
         "source": "C:\\Users\\ASUS\\Documents\\Thesis Docs\\Chamber-20180909T075639Z-001\\Chamber\\ChamberOfWizards3\\app\\src\\main\\res\\layout\\activity_edit_post.xml"
+    },
+    {
+        "merged": "C:\\Users\\ASUS\\Documents\\Thesis Docs\\Chamber-20180909T075639Z-001\\Chamber\\ChamberOfWizards3\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
+        "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-alpha1.aar\\c89a56eff342ed34b5088b080e3ec77d\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_36dp.png"
     },
     {
         "merged": "C:\\Users\\ASUS\\Documents\\Thesis Docs\\Chamber-20180909T075639Z-001\\Chamber\\ChamberOfWizards3\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
@@ -112,12 +112,12 @@
         "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-1\\files-1.1\\design-button-28.0.0-alpha1.aar\\b9b50e5ee0af2286406d976f1836f029\\res\\animator\\mtrl_btn_state_list_anim.xml"
     },
     {
-        "merged": "C:\\Users\\ASUS\\Documents\\Thesis Docs\\Chamber-20180909T075639Z-001\\Chamber\\ChamberOfWizards3\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_primary_text_disable_only_material_light.xml.flat",
-        "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-alpha1.aar\\c89a56eff342ed34b5088b080e3ec77d\\res\\color\\abc_primary_text_disable_only_material_light.xml"
-    },
-    {
         "merged": "C:\\Users\\ASUS\\Documents\\Thesis Docs\\Chamber-20180909T075639Z-001\\Chamber\\ChamberOfWizards3\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_math_icon_triadic.png.flat",
         "source": "C:\\Users\\ASUS\\Documents\\Thesis Docs\\Chamber-20180909T075639Z-001\\Chamber\\ChamberOfWizards3\\app\\src\\main\\res\\drawable-hdpi\\math_icon_triadic.png"
+    },
+    {
+        "merged": "C:\\Users\\ASUS\\Documents\\Thesis Docs\\Chamber-20180909T075639Z-001\\Chamber\\ChamberOfWizards3\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_primary_text_disable_only_material_light.xml.flat",
+        "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-alpha1.aar\\c89a56eff342ed34b5088b080e3ec77d\\res\\color\\abc_primary_text_disable_only_material_light.xml"
     },
     {
         "merged": "C:\\Users\\ASUS\\Documents\\Thesis Docs\\Chamber-20180909T075639Z-001\\Chamber\\ChamberOfWizards3\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_chip_ripple_color.xml.flat",
@@ -678,6 +678,10 @@
     {
         "merged": "C:\\Users\\ASUS\\Documents\\Thesis Docs\\Chamber-20180909T075639Z-001\\Chamber\\ChamberOfWizards3\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
         "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-alpha1.aar\\c89a56eff342ed34b5088b080e3ec77d\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
+    },
+    {
+        "merged": "C:\\Users\\ASUS\\Documents\\Thesis Docs\\Chamber-20180909T075639Z-001\\Chamber\\ChamberOfWizards3\\app\\build\\intermediates\\res\\merged\\debug\\color_nav_item_color.xml.flat",
+        "source": "C:\\Users\\ASUS\\Documents\\Thesis Docs\\Chamber-20180909T075639Z-001\\Chamber\\ChamberOfWizards3\\app\\src\\main\\res\\color\\nav_item_color.xml"
     },
     {
         "merged": "C:\\Users\\ASUS\\Documents\\Thesis Docs\\Chamber-20180909T075639Z-001\\Chamber\\ChamberOfWizards3\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_home.png.flat",
