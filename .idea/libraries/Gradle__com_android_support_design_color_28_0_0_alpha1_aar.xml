@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.android.support:design-color:28.0.0-alpha1@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-color-28.0.0-alpha1.aar/4ddd6af0a323c995b528f9062803fdc8/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-color-28.0.0-alpha1.aar/4ddd6af0a323c995b528f9062803fdc8/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-color-28.0.0-alpha1.aar/bc890ac90eb84830c1aed1149aa0da51/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-color-28.0.0-alpha1.aar/bc890ac90eb84830c1aed1149aa0da51/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

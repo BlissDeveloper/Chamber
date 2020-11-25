@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ChamberOfWizards3.iml" filepath="$PROJECT_DIR$/ChamberOfWizards3.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Chamber.iml" filepath="$PROJECT_DIR$/.idea/modules/Chamber.iml" group="Chamber" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="Chamber/app" />
     </modules>
   </component>
 </project>
